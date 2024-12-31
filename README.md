@@ -1,36 +1,79 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-## Getting Started
+# Next.js Rendering Methods Example
 
-First, run the development server:
+This project demonstrates different rendering methods available in Next.js, including:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+- **Server-Side Rendering (SSR):** Pages are rendered on the server for every request.
+- **Static Site Generation (SSG):** Pages are pre-rendered at build time.
+- **Incremental Static Regeneration (ISR):** Pages are updated at runtime after a set revalidation period.
+- **Client-Side Rendering (CSR):** Pages fetch data and render dynamically in the client browser.
+
+---
+
+## 🚀 Features
+
+- Implementation of all rendering methods in Next.js.
+- Responsive design using Tailwind CSS.
+- Organized structure for easy scalability.
+
+---
+
+## 📂 Project Structure
+
+```plaintext
+src/
+├── app/
+│   ├── products-csr/       # Client-Side Rendering implementation
+│   ├── products-ssr/       # Server-Side Rendering implementation
+│   ├── products-ssg/       # Static Site Generation implementation
+│   ├── products-isr/       # Incremental Static Regeneration implementation
+│   ├── layout.tsx          # Root layout with header and footer
+│   ├── page.tsx            # Home page with navigation links
+├── components/
+│   ├── ButtonLink.tsx      # Reusable button component
+│   ├── ProductCard.tsx     # Card component for product display
+│   ├── ProductDetails.tsx  # Component for displaying product details
+│   ├── ProductList.tsx     # Component for rendering a list of products
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🛠️ Installation
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/masniper/nextjs-rendering-examples.git
+   cd nextjs-rendering-examples
+   ```
 
-## Learn More
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
 
-To learn more about Next.js, take a look at the following resources:
+3. Run the development server:
+   ```bash
+   npm run dev
+   ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+4. Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+### Home Page
+Navigate between SSR, SSG, ISR, and CSR pages.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Products Pages
+Display lists and details for each rendering method.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+## 📝 License
+
+This project is licensed under the MIT License - see the [LICENSE](./LICENSE) file for details.
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome! Feel free to open an issue or submit a pull request.
